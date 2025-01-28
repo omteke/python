@@ -1,0 +1,18 @@
+5.# Create a list of lists with different lengths
+list_of_lists = [
+    [1, 2, 3],
+    [4, 5],
+    [6, 7, 8, 9]
+]
+
+# Display the list of lists
+print("List of lists:", list_of_lists)
+
+# Access individual lists
+print("First list:", list_of_lists[0])
+print("Second list:", list_of_lists[1])
+print("Third list:", list_of_lists[2])
+
+# Access specific elements
+print("First element of the first list:", list_of_lists[0][0])
+print("Last element of the third list:", list_of_lists[2][-1])
