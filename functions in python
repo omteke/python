@@ -1,0 +1,25 @@
+1.# A) Define a simple function to print a message, and then call it
+def print_message():
+    print("Hello, this is a simple message!")
+
+print_message()  # Calling the function
+
+# B) Define a function that takes parameters and use those parameters inside the function
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Riya")  # Calling the function with a parameter
+
+# C) Define a function that can take any number of arguments using *args
+def sum_numbers(*args):
+    total = sum(args)
+    print(f"The sum is: {total}")
+
+sum_numbers(1, 2, 3, 4, 5)  # Calling the function with multiple arguments
+
+# D) Define a function with a default parameter value
+def introduce(name="Guest"):
+    print(f"Welcome, {name}!")
+
+introduce()            # Calling the function without arguments (uses default)
+introduce("Riya")       # Calling the function with an argument
