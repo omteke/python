@@ -1,0 +1,30 @@
+2.# Initialize an empty dictionary to store student grades
+student_grades = {}
+
+# Add or update a student's grade
+def add_or_update(name, grade):
+    student_grades[name] = grade
+    print(name, "grade updated to", grade)
+
+# Delete a student's grade
+def delete(name):
+    if name in student_grades:
+        del student_grades[name]
+        print(name, "grade deleted")
+    else:
+        print(name, "not found")
+
+# Display all grades
+def display():
+    if student_grades:
+        for name, grade in student_grades.items():
+            print(name, ":", grade)
+    else:
+        print("No records available")
+
+# Example usage
+add_or_update("Alice", "A")
+add_or_update("Bob", "B")
+display()
+delete("Alice")
+display()
