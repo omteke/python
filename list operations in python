@@ -1,0 +1,50 @@
+4.# A) Basic list operations
+my_list = [10, 20, 30, 40, 50]
+print("Original list:", my_list)
+
+# Accessing elements
+print("First element:", my_list[0])
+
+# Modifying an element
+my_list[1] = 25
+print("Modified list:", my_list)
+
+# Adding an element
+my_list.append(60)
+print("After adding an element:", my_list)
+
+# Removing an element
+my_list.remove(30)
+print("After removing an element:", my_list)
+
+# B) Slicing to extract a portion of the list
+print("Sliced list (elements 1 to 3):", my_list[1:4])
+
+# C) Sorting a list
+unsorted_list = [40, 10, 50, 20, 30]
+print("Unsorted list:", unsorted_list)
+
+# Ascending order
+unsorted_list.sort()
+print("List sorted in ascending order:", unsorted_list)
+
+# Descending order
+unsorted_list.sort(reverse=True)
+print("List sorted in descending order:", unsorted_list)
+
+# D) Finding the largest and smallest numbers
+numbers = [15, 22, 8, 19, 31]
+print("Largest number:", max(numbers))
+print("Smallest number:", min(numbers))
+
+# E) Reversing the order of elements
+reversed_list = my_list[::-1]
+print("Reversed list:", reversed_list)
+
+# F) Working with nested lists
+nested_list = [[1, 2, 3], [4, 5], [6, 7, 8]]
+print("Nested list:", nested_list)
+
+# Accessing elements in nested lists
+print("First list in nested list:", nested_list[0])
+print("Second element of first list:", nested_list[0][1])
